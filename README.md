@@ -1,5 +1,6 @@
 # API Overview
-Base URL: http://localhost:your_port
+
+### Base URL: https://nodejstask2.onrender.com/
 
 
 1. Get All Rooms
@@ -14,11 +15,30 @@ HTTP Method: `POST`
 Endpoint: `/createroom`
 Description: Create a new room.
 
+Example Body content for create room:
+`
+{
+        "room_name": "room - 5",
+        "amenities": "Wi-Fi",
+        "seats": 1,
+        "price_per_hour":1000
+}`
+
 3. Book Room
 
 HTTP Method: `POST`
 Endpoint: `/bookroom`
 Description: Book a room for a customer.
+
+Example Body content for Booking Room:
+
+`{
+            "customerName":"nithya",
+            "date":"2-2-2024",
+            "startTime":"10am",
+            "endTime":"11am",
+            "roomid":1
+}`
 
 4. Get Booked Data
 
